@@ -6,7 +6,6 @@ MainWindow::MainWindow(QWidget *parent)
     , ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
-    afficheur.get_brightness();
 }
 
 MainWindow::~MainWindow()
@@ -15,7 +14,9 @@ MainWindow::~MainWindow()
 }
 
 void MainWindow::telecharger_brightness(){
-
+    double brightness = afficheur.get_brightness();
+    qDebug()<<brightness;
+    ui->brightnesss->setValue(brightness);
 }
 
 void MainWindow::envoyer_txt(){

@@ -4,6 +4,10 @@
 #include <QJsonObject>
 #include <QtNetwork/QNetworkAccessManager>
 #include <QUrl>
+#include <QNetworkRequest>
+#include <QNetworkReply>
+#include <QtGui>
+#include <QMessageBox>
 
 class pixelix
 {

@@ -24,6 +24,7 @@ private:
     bool erreurTrouvee;
     pixelix afficheur;
 
+private slots:
     void telecharger_brightness();
     void envoyer_txt();
     void choixcouleur();
